@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="treetree.css">
+</head>
+<body>
+  <div class="flex-container">
+    <div class="block-calcul">
+      <form name="form"><input id='inputnum' type="text" name="textview" readonly class="input"></form>
+      <div class="flex-block">
+        <div class="flex-element" onclick="insert('7')">7</div>
+        <div class="flex-element" onclick="insert('8')">8</div>
+        <div class="flex-element" onclick="insert('9')">9</div>
+        <div class="flex-element" onclick="insertOperation('+')">+</div>
+      </div>
+      <div class="flex-block">
+        <div class="flex-element" onclick="insert('4')">4</div>
+        <div class="flex-element" onclick="insert('5')">5</div>
+        <div class="flex-element" onclick="insert('6')">6</div>
+        <div class="flex-element" onclick="insertOperation('-')">-</div>
+      </div>
+      <div class="flex-block">
+        <div class="flex-element" onclick="insert('1')">1</div>
+        <div class="flex-element" onclick="insert('2')">2</div>
+        <div class="flex-element" onclick="insert('3')">3</div>
+        <div class="flex-element" onclick="insertOperation('*')">*</div>
+      </div>
+      <div class="flex-block">
+        <div class="flex-element" onclick="clean()">C</div>
+        <div class="flex-element" onclick="insert('0')">0</div>
+        <div class="flex-element" onclick="ravno()">=</div>
+        <div class="flex-element" onclick="insertOperation('/')">/</div>
+      </div>
+    </div>
+  </div>
+  <script src=".\twotwo.js"></script>
+</body>
+
+</html>
